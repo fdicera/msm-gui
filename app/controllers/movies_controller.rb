@@ -43,7 +43,7 @@ class MoviesController < ApplicationController
 
   def show
     the_id = params.fetch("path_id")
-
+ # add if/else for case where the entered ID does not match an actual movie.
     matching_movies = Movie.where({ :id => the_id })
     @the_movie = matching_movies.at(0)
 
