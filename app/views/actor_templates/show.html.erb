@@ -6,8 +6,6 @@
   Go back
 </a>
 
-<hr>
-
 <div>
   <a href="/delete_actor/<%= @the_actor.id %>">Delete actor</a>
 </div>
@@ -17,18 +15,18 @@
 <form action="/modify_actor_record/<%= @the_actor.id %>" method = "post">
 
   <div>
-  <label for="title_field">Name</label>
-  <input id="title_field" type = "text" name="the_title" value="<%= @the_actor.name%>">
+  <label for="name_field">Name</label>
+  <input id="name_field" type = "text" name="the_name" value="<%= @the_actor.name%>">
   </div>
 
   <div>
-  <label for="year_field">Dob</label>
-  <input id="year_field" type = "text" name="the_year" value="<%= @the_actor.dob%>">
+  <label for="dob_field">Dob</label>
+  <input id="dob_field" type = "text" name="the_dob" value="<%= @the_actor.dob%>">
   </div>
 
   <div>
-  <label for="duration_field">Bio</label>
-  <input id="duration_field" type = "text" name="the_duration" value="<%= @the_actor.bio%>">
+  <label for="bio_field">Bio</label>
+  <input id="bio_field" type = "text" name="the_bio" value="<%= @the_actor.bio%>">
   </div>
 
   <div>
